@@ -1,0 +1,167 @@
+
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hamza Mobil Diagnosztika — Gyors hibamegállapítás</title>
+  <meta name="description" content="Hamza Mobil Diagnosztika — online hibamegállapítás, házhoz diagnosztika és alkatrészbeszerzés. Gyors, korrekt, profi."/>
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#ffffff; --accent:#0b3d91; --muted:#6b7280; --accent-2:#ff6b35;
+      --radius:12px; --maxw:980px; --pad:18px; --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,#eef3fb 0%, var(--bg) 100%); color:#111;}
+    .wrap{max-width:var(--maxw); margin:26px auto; padding:16px;}
+    header{display:flex;align-items:center;gap:16px;padding:14px;border-radius:14px;background:var(--card);box-shadow:0 6px 24px rgba(11,61,145,0.06)}
+    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#1759c7);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px;align-items:start}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .cta{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(11,61,145,0.12)}
+    .price{font-size:20px;font-weight:700;color:var(--accent-2)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+    .fitem{background:linear-gradient(180deg,rgba(11,61,145,0.03),transparent);padding:10px;border-radius:10px;font-size:14px;color:var(--muted)}
+    form label{display:block;margin-top:10px;font-size:13px;color:#333}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-top:6px;font-size:14px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin:28px 0 80px;text-align:center;color:var(--muted);font-size:13px}
+    .services{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .service{padding:12px;border-radius:10px;border:1px solid #eef2ff;background:linear-gradient(180deg,#fff, #fbfdff)}
+    .flex{display:flex;gap:10px;align-items:center}
+    @media(max-width:940px){ .hero{grid-template-columns:1fr} .logo{width:56px;height:56px} .hero aside{order:2} .services{grid-template-columns:1fr} }
+    .badge{background:var(--accent);color:#fff;padding:6px 8px;border-radius:8px;font-size:13px}
+    .trust{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}
+    .testimonial{background:linear-gradient(180deg,#fff,#fbfdff);padding:10px;border-radius:10px;border:1px solid #eef2ff;margin-top:10px}
+    .price-list{margin-top:12px}
+    .price-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #eef2ff}
+    .contact-short{display:flex;gap:8px;align-items:center}
+    .note{font-size:12px;color:#666;margin-top:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">MMD</div>
+      <div>
+        <h1>Hamza Mobil Diagnosztika</h1>
+        <p class="lead">Gyors hibamegállapítás – online vagy házhoz. Megmondom mi a baja, mielőtt sokat költenél.</p>
+      </div>
+    </header>
+
+    <div class="hero" aria-live="polite">
+      <main class="card">
+        <div class="flex" style="justify-content:space-between;gap:12px">
+          <div><h2 style="margin:0">Mit csinálok</h2><div class="small">Diagnosztika, tanácsadás, kiszállás, alkatrészbeszerzés</div></div>
+          <div class="badge">Gyors • Megbízható</div>
+        </div>
+
+        <div class="features" aria-hidden="false">
+          <div class="fitem">OBD hibakód olvasás</div>
+          <div class="fitem">Élőadat elemzés</div>
+          <div class="fitem">Turbó / EGR / DPF vizsgálat</div>
+          <div class="fitem">Vásárlás előtti ellenőrzés</div>
+          <div class="fitem">Házhoz diagnosztika</div>
+          <div class="fitem">Alkatrész ajánlás + beszerzés</div>
+        </div>
+
+        <section class="card" style="margin-top:14px">
+          <h3 style="margin:0">Árak (áttekintés)</h3>
+          <div class="price-list">
+            <div class="price-row"><div class="small">Online hibamegállapítás</div><div class="price">3 500 Ft</div></div>
+            <div class="price-row"><div class="small">Kiszállás (Vásárosnamény)</div><div class="price">15 000 Ft</div></div>
+            <div class="price-row"><div class="small">Kiszállás (környék)</div><div class="price">20 000–25 000 Ft</div></div>
+            <div class="price-row"><div class="small">Teljes átvizsgálás</div><div class="price">30 000–40 000 Ft</div></div>
+          </div>
+          <div class="note">Árak tájékoztató jellegűek. Alkatrész és nagyobb javítás külön.</div>
+        </section>
+
+        <section style="margin-top:14px" class="card">
+          <h3 style="margin:0">Hogyan működik?</h3>
+          <ol style="margin-top:8px;color:var(--muted)">
+            <li>Írd le a hibát vagy küldj hibalistát.</li>
+            <li>10–15 percen belül írásos javaslatot kapsz (online: 3 500 Ft).</li>
+            <li>Szükség esetén kimegyek a helyszínre, diagnosztika és gyors beavatkozás.</li>
+            <li>Ajánlat és alkatrész javaslat — ha kéred, beszerzem.</li>
+          </ol>
+        </section>
+
+        <section style="margin-top:14px" class="card">
+          <h3 style="margin:0">Vélemények</h3>
+          <div class="testimonial">„15 perc alatt megmondta, mi a baja. Nem kellett fölöslegesen szétkapni a motort.” — Gábor</div>
+          <div class="testimonial">„Kiszállt, átvizsgált, pontos javaslat: spóroltam 120 000 Ft-ot.” — Judit</div>
+        </section>
+
+      </main>
+
+      <aside class="card" aria-label="Foglalás és kapcsolat">
+        <h3>Foglalj időpontot</h3>
+        <form id="leadForm" onsubmit="submitLead(event)">
+          <label for="name">Név</label>
+          <input id="name" required placeholder="Pl. Hamza">
+          <label for="phone">Telefonszám</label>
+          <input id="phone" required placeholder="+36 30 xxx xxxx">
+          <label for="service">Szolgáltatás</label>
+          <select id="service">
+            <option>Online hibamegállapítás — 3500 Ft</option>
+            <option>Kiszállás (Vásárosnamény) — 15000 Ft</option>
+            <option>Teljes átvizsgálás — 30000 Ft</option>
+          </select>
+          <label for="msg">Rövid hibaleírás</label>
+          <textarea id="msg" rows="4" placeholder="Pl. motorhiba, füstöl, nem indul..."></textarea>
+          <button class="btn" type="submit">Küldés</button>
+          <a class="btn ghost" href="mailto:hamza302419@gmail.com?subject=Idopont%20kivansag">E-mail küldés</a>
+          <div class="small" style="margin-top:8px">Válasz: általában 1 munkanap.</div>
+        </form>
+
+        <div style="margin-top:14px">
+          <h4 style="margin:0">Kapcsolat</h4>
+          <div class="contact-short"><div style="font-weight:700">Tel:</div><div style="margin-left:8px">06307264381</div></div>
+          <div class="contact-short" style="margin-top:6px"><div style="font-weight:700">E-mail:</div><div style="margin-left:8px">hamza302419@gmail.com</div></div>
+          <div class="trust"><div class="small">Helyszín: Vásárosnamény + környék</div></div>
+        </div>
+
+      </aside>
+    </div>
+
+    <section style="margin-top:18px" class="card">
+      <h3>Gyakori kérdések</h3>
+      <div class="small" style="margin-top:8px"><strong>K: Mennyi idő az online diagnózis?</strong><br>A: Átlag 10–15 perc.</div>
+      <div class="small" style="margin-top:8px"><strong>K: Fizetni kell előre?</strong><br>A: Online diagnózisnál igen (banki utalás/PayPal/átutalás), házhoz kiszállásnál a munkadíj a helyszínen is fizethető.</div>
+      <div class="small" style="margin-top:8px"><strong>K: Alkatrészt te szerzed be?</strong><br>A: Igen, díj ellenében beszerezhetem és beszereléssel együtt vállalom.</div>
+    </section>
+
+    <section style="margin-top:18px" class="card">
+      <h3>Részletes árlista</h3>
+      <div class="price-list">
+        <div class="price-row"><div>Olajcsere (anyaggal)</div><div>10 000 – 25 000 Ft</div></div>
+        <div class="price-row"><div>Vezérlés csere (készlet + munka)</div><div>40 000 – 120 000 Ft</div></div>
+        <div class="price-row"><div>Hengerfej felújítás</div><div>80 000 – 200 000 Ft</div></div>
+        <div class="price-row"><div>Dugattyú‑gyűrű csere</div><div>200 000 – 450 000 Ft</div></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small">© Hamza Mobil Diagnosztika • Kapcsolat: 06307264381 • hamza302419@gmail.com</div>
+    </footer>
+  </div>
+
+  <script>
+    function submitLead(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const phone=document.getElementById('phone').value.trim();
+      const service=document.getElementById('service').value;
+      const msg=document.getElementById('msg').value.trim();
+      if(!name||!phone){alert('Kérlek add meg a nevet és telefonszámot.');return;}
+      const subject = encodeURIComponent('Időpontkérés: '+service+' - '+name);
+      const body = encodeURIComponent('Név: '+name+'\nTelefon: '+phone+'\nSzolgáltatás: '+service+'\nMegjegyzés: '+msg);
+      window.location.href = 'mailto:hamza302419@gmail.com?subject='+subject+'&body='+body;
+    }
+  </script>
+</body>
+</html>
